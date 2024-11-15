@@ -4,6 +4,7 @@ import { Box, Collapse, IconButton, Link } from "@mui/material";
 import { Close, Menu } from "@mui/icons-material";
 import Logo from "../../assets/Images/Logo.png";
 import { headerStyles } from "./styles";
+import BaseLink from "../BaseLink";
 
 const navigationLinks = [
   { title: "Add Tour", path: "add-tour" },
@@ -32,21 +33,20 @@ const Header = () => {
     ));
 
   const renderExploreMore = (isMobile = false) => (
-    <Link
-      to="explore-more"
-      component={RouterLink}
+    <BaseLink
+      to="explore-now"
       sx={headerStyles.rightLink}
       onClick={isMobile ? handleMenuToggle : undefined}
     >
-      Explore More
-    </Link>
+      Explore Now
+    </BaseLink>
   );
 
   return (
     <>
       <Box sx={headerStyles.fixedContainer}>
         <Box sx={headerStyles.container}>
-          <Link to="/" component={RouterLink}>
+          <Link to="/" component={RouterLink} sx={headerStyles.navlinks}>
             <img src={Logo} alt="logo" />
           </Link>
           <Box sx={headerStyles.navlinksWrapper}>{renderNavigationLinks()}</Box>
