@@ -13,7 +13,7 @@ const navigationLinks = [
 ];
 
 const Header = () => {
-  const [showRightButton, setShowRightButton] = useState(true);
+  const [showRightButton, setShowRightButton] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const location = useLocation();
 
