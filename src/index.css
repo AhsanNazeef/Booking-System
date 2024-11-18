@@ -1,5 +1,21 @@
+@import "rsuite/DateRangePicker/styles/index.css";
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Date Range Picker Fix Primary Color */
+:root {
+  --rs-primary-50: #fef0ee;
+  --rs-primary-100: #fbd3cb;
+  --rs-primary-200: #f8b5a8;
+  --rs-primary-300: #f69c8b;
+  --rs-primary-400: #f3846e;
+  --rs-primary-500: #f16b51;
+  --rs-primary-600: #d35e47;
+  --rs-primary-700: #b5503d;
+  --rs-primary-800: #974333;
+  --rs-primary-900: #793629;
 }

@@ -4,7 +4,6 @@ export const headerStyles = {
     top: 0,
     left: 0,
     right: 0,
-    backgroundColor: "#fff",
   },
   container: {
     zIndex: 11,
