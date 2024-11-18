@@ -1,6 +1,7 @@
 import {
   AttachMoneyOutlined,
   CalendarTodayOutlined,
+  ExpandMore,
   LocationOnOutlined,
   SearchOutlined,
 } from "@mui/icons-material";
@@ -66,6 +67,7 @@ const SearchBar = () => {
               value={priceRange}
               onChange={handleChange}
               sx={searchBarStyles.selectDropdown}
+              IconComponent={ExpandMore}
               MenuProps={{
                 sx: searchBarStyles.dropdownMenuStyles,
               }}
