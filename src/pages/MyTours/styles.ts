@@ -20,9 +20,8 @@ export const myToursStyles = {
     color: "#202445",
   },
   cardsWrapper: {
-    display: "flex",
-    flexDirection: "row",
-    gap: "34px",
-    flexWrap: "wrap",
+    display: "grid",
+    gridTemplateColumns: "1fr 1fr 1fr",
+    gap: "54px",
   },
 };
