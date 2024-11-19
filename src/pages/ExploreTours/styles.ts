@@ -19,4 +19,10 @@ export const exploreToursStyles = {
       backgroundColor: "rgba(255, 255, 255, 0.2)",
     },
   },
+  container: {
+    position: "relative",
+    display: "flex",
+    flexDirection: "column",
+    gap: "48px",
+  },
 };
