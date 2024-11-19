@@ -10,14 +10,7 @@ const ExploreTours = () => {
       <Box sx={exploreToursStyles.coverImage}>
         <img src={CoverImage} alt="tour" />
       </Box>
-      <Box
-        sx={{
-          position: "relative",
-          display: "flex",
-          flexDirection: "column",
-          gap: "48px",
-        }}
-      >
+      <Box sx={exploreToursStyles.container}>
         <SearchBar />
         <PopularSearch />
       </Box>
