@@ -4,6 +4,7 @@ export const headerStyles = {
     top: 0,
     left: 0,
     right: 0,
+    zIndex: 12,
   },
   container: {
     zIndex: 11,
@@ -46,6 +47,7 @@ export const headerStyles = {
     lineHeight: "normal",
     textDecoration: "none",
     transition: "color 0.3s ease",
+    position: "relative",
     "&:hover": {
       color: "#f16b51",
     },
@@ -53,6 +55,20 @@ export const headerStyles = {
       textAlign: "center",
       width: "100%",
       padding: "8px 0",
+    },
+  },
+  activeNavlink: {
+    "&::after": {
+      content: '""',
+      position: "absolute",
+      bottom: "-4px",
+      left: 0,
+      width: "100%",
+      height: "2px",
+      backgroundColor: "#f16b51",
+      transform: "scaleX(1)",
+      transformOrigin: "bottom left",
+      transition: "transform 0.3s ease-in-out",
     },
   },
   rightLink: {
@@ -79,7 +95,12 @@ export const headerStyles = {
   },
   mobileMenu: {
     width: "100%",
+    height: "calc(100vh - 64px)",
     backgroundColor: "#fff",
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center",
+    zIndex: 999,
     borderTop: "1px solid rgba(0,0,0,0.1)",
   },
 };

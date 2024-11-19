@@ -5,12 +5,7 @@ import { Close, Menu } from "@mui/icons-material";
 import Logo from "../../assets/Images/Logo.png";
 import { headerStyles } from "./styles";
 import BaseLink from "../BaseLink";
-
-const navigationLinks = [
-  { title: "Add Tour", path: "add-tour" },
-  { title: "Book Tour", path: "book-tour" },
-  { title: "My Tours", path: "my-tours" },
-];
+import { navigationLinks } from "../../constants";
 
 const Header = () => {
   const [showRightButton, setShowRightButton] = useState(false);
@@ -34,7 +29,12 @@ const Header = () => {
         key={path}
         to={path}
         component={RouterLink}
-        sx={headerStyles.navlinks}
+        sx={{
+          ...headerStyles.navlinks,
+          ...(location.pathname === `/${path}`
+            ? headerStyles.activeNavlink
+            : {}),
+        }}
         onClick={isMobile ? handleMenuToggle : undefined}
       >
         {title}
@@ -82,7 +82,6 @@ const Header = () => {
           </Box>
         </Collapse>
       </Box>
-      {/* <Box sx={headerStyles.headerSpacer} /> */}
     </>
   );
 };

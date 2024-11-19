@@ -73,3 +73,9 @@ export const destinations = [
     duration: "1 Day",
   },
 ];
+
+export const navigationLinks = [
+  { title: "Add Tour", path: "explore-tours" },
+  { title: "Book Tour", path: "book-tour" },
+  { title: "My Tours", path: "my-tours" },
+];
