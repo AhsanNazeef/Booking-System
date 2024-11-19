@@ -107,3 +107,45 @@ export const includedSubItems = [
   "Mess Tent, Kitchen Utensils, and Cook",
   "Waterproof Tents on twin/triple Sharing",
 ];
+
+export const textContent = [
+  "The Pérez Art Museum Miami —officially known as the Jorge M. Pérez Art Museum of Miami-Dade County—is a contemporary art museum that relocated in 2013 to the Museum Park in Downtown Miami, Florida.",
+  "Founded in 1984 as the Center for the Fine Arts, it became known as the Miami Art Museum from 1996 until it was renamed in 2013 upon the opening its new building designed by Herzog & de Meuron at 1103 Biscayne Boulevard",
+  "PAMM, along with the $275 million Phillip and Patricia Frost Museum of Science and a city park which are being built in the area with completion in 2017, is part of the 20-acre Museum Park.",
+];
+
+export const schedule = [
+  {
+    day: "Day 1",
+    weather: "sunny",
+    temperature: "18°C",
+    activities: [
+      "Tours with American Sign Language",
+      "Audio description group tours",
+      "Large-print gallery notes",
+      "Lunch Included.",
+    ],
+  },
+  {
+    day: "Day 2",
+    weather: "cloudy",
+    temperature: "20°C",
+    activities: [
+      "Tours with American Sign Language",
+      "Audio description group tours",
+      "Large-print gallery notes",
+      "Lunch Included.",
+    ],
+  },
+  {
+    day: "Day 3",
+    weather: "sunny",
+    temperature: "17 °C",
+    activities: [
+      "Tours with American Sign Language",
+      "Audio description group tours",
+      "Large-print gallery notes",
+      "Lunch Included.",
+    ],
+  },
+];

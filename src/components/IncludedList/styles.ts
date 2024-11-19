@@ -31,7 +31,7 @@ export const includedListStyles = {
   subSectionItems: {
     display: "flex",
     flexDirection: "row",
-    gap: "7px",
+    gap: "12px",
     alignItems: "center",
   },
   icon: {
