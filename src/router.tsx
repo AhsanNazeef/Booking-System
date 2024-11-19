@@ -5,6 +5,7 @@ import ExploreTours from "./pages/ExploreTours";
 import Layout from "./components/Layout";
 import BookTour from "./pages/BookTour";
 import MyTours from "./pages/MyTours";
+import DestinationDetails from "./pages/DestinationDetails";
 
 export const router = createBrowserRouter([
   {
@@ -15,6 +16,7 @@ export const router = createBrowserRouter([
       { path: "/explore-tours", element: <ExploreTours /> },
       { path: "/book-tour", element: <BookTour /> },
       { path: "/my-tours", element: <MyTours /> },
+      { path: "/destination-details", element: <DestinationDetails /> },
     ],
   },
   {
