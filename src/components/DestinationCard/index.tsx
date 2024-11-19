@@ -7,6 +7,7 @@ import {
   DeleteOutlineOutlined,
   QueryBuilderRounded,
 } from "@mui/icons-material";
+import { useNavigate } from "react-router-dom";
 
 type DestinationCardProps = {
   img: string;
@@ -26,6 +27,7 @@ const DestinationCard = ({
   type,
 }: DestinationCardProps) => {
   const [isHovered, setIsHovered] = useState(false);
+  const navigate = useNavigate();
 
   return (
     <Box
@@ -60,11 +62,21 @@ const DestinationCard = ({
         ) : (
           <Box sx={cardStyles.textContentWrapper}>
             {type === "allTours" ? (
-              <BaseButton sx={{ width: "100%" }}>View Details</BaseButton>
+              <BaseButton
+                sx={{ width: "100%" }}
+                onClick={() => navigate("/destination-details")}
+              >
+                View Details
+              </BaseButton>
             ) : (
               <Box sx={cardStyles.myTours}>
                 <DeleteOutlineOutlined sx={cardStyles.deleteIcon} />
-                <BaseButton sx={cardStyles.toursButton}>Details</BaseButton>
+                <BaseButton
+                  sx={cardStyles.toursButton}
+                  onClick={() => navigate("/destination-details")}
+                >
+                  Details
+                </BaseButton>
                 <BaseButton sx={cardStyles.toursButton}>Update</BaseButton>
               </Box>
             )}
