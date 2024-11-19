@@ -6,6 +6,8 @@ import destinationFive from "./assets/Images/tourFive.png";
 import destinationSix from "./assets/Images/tourSix.png";
 import destinationSeven from "./assets/Images/tourSeven.png";
 import destinationEight from "./assets/Images/tourEight.png";
+import destinationNine from "./assets/Images/tourNine.png";
+import destinationTen from "./assets/Images/tourTen.png";
 
 export const destinations = [
   {
@@ -78,4 +80,30 @@ export const navigationLinks = [
   { title: "Add Tour", path: "explore-tours" },
   { title: "Book Tour", path: "book-tour" },
   { title: "My Tours", path: "my-tours" },
+];
+
+export const gridImages = [
+  destinationOne,
+  destinationEight,
+  destinationNine,
+  destinationSeven,
+  destinationTen,
+];
+
+export const includedListDetails = [
+  { label: "Destination", value: "Miami" },
+  {
+    label: "Departure Location",
+    value: "2000 Brush St, Detroit, MI 48226, United States",
+  },
+  { label: "Return", value: "7:00 PM on Day 3" },
+];
+
+export const includedSubItems = [
+  "Basic first aid kit",
+  "Fuel Expense",
+  "Detail Guided Maps",
+  "Comfortable Private Booked Transport",
+  "Mess Tent, Kitchen Utensils, and Cook",
+  "Waterproof Tents on twin/triple Sharing",
 ];
