@@ -42,9 +42,8 @@ export const bookTourStyles = {
     fontSize: "20px",
   },
   cardsWrapper: {
-    display: "flex",
-    flexDirection: "row",
-    gap: "34px",
-    flexWrap: "wrap",
+    display: "grid",
+    gridTemplateColumns: "1fr 1fr 1fr",
+    gap: "54px",
   },
 };

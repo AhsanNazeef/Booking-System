@@ -1,8 +1,5 @@
 export const cardStyles = {
   container: {
-    width: "418px",
-    minWidth: "390px",
-    height: "388px",
     borderRadius: "10px",
     boxShadow: "0px 0px 4px rgba(159,164,189,0.3)",
     display: "flex",
