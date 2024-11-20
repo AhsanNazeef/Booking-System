@@ -7,6 +7,7 @@ import BookTour from "./pages/BookTour";
 import MyTours from "./pages/MyTours";
 import DestinationDetails from "./pages/DestinationDetails";
 import BookingConfirmation from "./pages/BookingConfirmation";
+import UpdateBooking from "./pages/UpdateBooking";
 
 export const router = createBrowserRouter([
   {
@@ -19,6 +20,7 @@ export const router = createBrowserRouter([
       { path: "/my-tours", element: <MyTours /> },
       { path: "/destination-details", element: <DestinationDetails /> },
       { path: "/add-tour", element: <BookingConfirmation /> },
+      { path: "update-booking", element: <UpdateBooking /> },
     ],
   },
   {

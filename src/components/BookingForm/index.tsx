@@ -16,7 +16,24 @@ interface BookingFormData {
   paymentMethod: string;
 }
 
-const BookingForm = (): JSX.Element => {
+interface BookingFormProps {
+  defaultValues?: BookingFormData;
+  onSubmit?: (data: BookingFormData) => void;
+  type?: "update" | "create";
+}
+
+const BookingForm = ({
+  defaultValues = {
+    name: "",
+    email: "",
+    phone: "",
+    numAdults: 1,
+    numChildren: 0,
+    paymentMethod: "",
+  },
+  type = "create",
+  onSubmit = () => console.log("Form submitted:"),
+}: BookingFormProps): JSX.Element => {
   const {
     register,
     handleSubmit,
@@ -24,19 +41,8 @@ const BookingForm = (): JSX.Element => {
     formState: { errors },
   } = useForm<BookingFormData>({
     resolver: joiResolver(bookingFormValidationSchema),
-    defaultValues: {
-      name: "",
-      email: "",
-      phone: "",
-      numAdults: 1,
-      numChildren: 0,
-      paymentMethod: "",
-    },
+    defaultValues,
   });
-
-  const onSubmit = (data: BookingFormData) => {
-    console.log("Form submitted:", data);
-  };
 
   return (
     <Box
@@ -118,9 +124,8 @@ const BookingForm = (): JSX.Element => {
           sx={bookingFormStyles.textField}
           error={!!errors.paymentMethod}
           helperText={errors.paymentMethod?.message}
-          defaultValue="Select"
+          defaultValue={defaultValues.paymentMethod}
           SelectProps={{
-            placeholder: "Select",
             IconComponent: ExpandMore,
             sx: bookingFormStyles.dropdown,
           }}
@@ -130,7 +135,9 @@ const BookingForm = (): JSX.Element => {
           <MenuItem value="visa">Visa</MenuItem>
         </TextField>
       </Box>
-      <BaseButton type="submit">Confirm</BaseButton>
+      <BaseButton type="submit">
+        {type === "create" ? "Confirm" : "Update"}
+      </BaseButton>
     </Box>
   );
 };

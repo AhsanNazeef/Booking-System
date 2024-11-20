@@ -77,7 +77,12 @@ const DestinationCard = ({
                 >
                   Details
                 </BaseButton>
-                <BaseButton sx={cardStyles.toursButton}>Update</BaseButton>
+                <BaseButton
+                  sx={cardStyles.toursButton}
+                  onClick={() => navigate("/update-booking")}
+                >
+                  Update
+                </BaseButton>
               </Box>
             )}
           </Box>
