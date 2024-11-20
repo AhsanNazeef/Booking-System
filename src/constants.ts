@@ -77,7 +77,7 @@ export const destinations = [
 ];
 
 export const navigationLinks = [
-  { title: "Add Tour", path: "explore-tours" },
+  { title: "Add Tour", path: "add-tour" },
   { title: "Book Tour", path: "book-tour" },
   { title: "My Tours", path: "my-tours" },
 ];
