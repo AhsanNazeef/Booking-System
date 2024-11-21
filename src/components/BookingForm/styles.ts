@@ -3,17 +3,30 @@ export const bookingFormStyles = {
     width: "100%",
     display: "flex",
     flexDirection: "column",
-    gap: "32px",
+    gap: {
+      xs: "18px",
+      md: "32px",
+    },
   },
   twoContentWrapper: {
     display: "flex",
-    flexDirection: "row",
-    gap: "32px",
+    flexDirection: {
+      xs: "column",
+      md: "row",
+    },
+    gap: {
+      xs: "18px",
+      md: "32px",
+    },
     width: "100%",
   },
   label: {
     color: "#999",
-    fontSize: "18px",
+    fontSize: {
+      xs: "14px",
+      md: "16px",
+      lg: "18px",
+    },
     fontWeight: 400,
     fontFamily: "Poppins",
   },
@@ -28,7 +41,10 @@ export const bookingFormStyles = {
       padding: " 15px 24px",
       border: `none`,
       fontWeight: 500,
-      fontSize: "16px",
+      fontSize: {
+        xs: "14px",
+        md: "16px",
+      },
       fontFamily: "Poppins",
       lineHeight: "normal",
       fontStyle: "normal",

@@ -1,15 +1,28 @@
 export const bookingConfirmationStyles = {
   container: {
     display: "flex",
-    flexDirection: "row",
-    marginLeft: "64px",
-    marginTop: "126px",
+    flexDirection: {
+      xs: "column",
+      md: "row",
+    },
+    gap: {
+      xs: "32px",
+      lg: 0,
+    },
+    margin: {
+      xs: "126px 16px 0 16px",
+      md: "126px 0 0 64px",
+    },
   },
   title: {
     fontFamily: "Poppins",
     fontStyle: "normal",
     fontWeight: 600,
-    fontSize: "40px",
+    fontSize: {
+      xs: "24px",
+      md: "32px",
+      lg: "40px",
+    },
     color: "#202445",
   },
   sectionOne: {
@@ -19,7 +32,10 @@ export const bookingConfirmationStyles = {
     gap: "32px",
   },
   sectionTwo: {
-    display: "flex",
+    display: {
+      xs: "none",
+      md: "flex",
+    },
     flex: 1,
     height: "calc(100vh - 126px)",
     "& img": {
@@ -29,6 +45,9 @@ export const bookingConfirmationStyles = {
     },
   },
   formWrapper: {
-    width: "70%",
+    width: {
+      xs: "100%",
+      lg: "75%",
+    },
   },
 };
