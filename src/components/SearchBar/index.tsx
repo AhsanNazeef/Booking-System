@@ -17,7 +17,6 @@ import { Box, Button, Typography } from "@mui/material";
 import { searchBarStyles } from "./styles";
 import { DateRangePicker } from "rsuite";
 import { useState } from "react";
-import { format } from "rsuite/esm/internals/utils/date";
 
 const { beforeToday } = DateRangePicker;
 
