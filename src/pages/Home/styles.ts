@@ -52,6 +52,7 @@ export const homeStyles = {
     fontFamily: "Poppins",
     fontWeight: 600,
     color: "#202445",
+    position: "relative",
     fontSize: {
       xs: "30px",
       sm: "48px",
@@ -63,25 +64,26 @@ export const homeStyles = {
       lg: "left",
     },
     lineHeight: "normal",
-  },
-  headingFirstWord: {
-    display: "inline",
-    position: "relative",
-    "&::before": {
-      content: "''",
+    "& img": {
       position: "absolute",
       bottom: {
-        xs: "-30px",
-        sm: "-20px",
+        xs: "-15px",
+        lg: "-10px",
       },
       left: 0,
       width: "100%",
       height: "40px",
-      backgroundImage: `url(${lineBelow})`,
       backgroundRepeat: "no-repeat",
       backgroundSize: "contain",
       zIndex: -1,
     },
+  },
+  headingFirstWord: {
+    display: "inline",
+    position: "relative",
+  },
+  lineBelow: {
+    disply: "absolute",
   },
   secondaryText: {
     fontFamily: "Poppins",
