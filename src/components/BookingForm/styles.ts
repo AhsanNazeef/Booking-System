@@ -32,7 +32,6 @@ export const bookingFormStyles = {
       fontFamily: "Poppins",
       lineHeight: "normal",
       fontStyle: "normal",
-      color: "#202445",
     },
     "& .Mui-focused": {
       "& .MuiOutlinedInput-notchedOutline": {
@@ -43,7 +42,7 @@ export const bookingFormStyles = {
   },
   dropdown: {
     "&.Mui-focused .MuiOutlinedInput-notchedOutline": {
-      border: "1px solid #e1e1e1",
+      border: "1px solid #202445",
     },
     "& .MuiSelect-icon": {
       marginRight: "10px",

@@ -16,6 +16,7 @@ type DestinationCardProps = {
   price: string;
   duration: string;
   type: "myTours" | "allTours";
+  handleDelete?: () => void;
 };
 
 const DestinationCard = ({
@@ -25,6 +26,7 @@ const DestinationCard = ({
   price,
   duration,
   type,
+  handleDelete,
 }: DestinationCardProps) => {
   const [isHovered, setIsHovered] = useState(false);
   const navigate = useNavigate();
@@ -70,7 +72,10 @@ const DestinationCard = ({
               </BaseButton>
             ) : (
               <Box sx={cardStyles.myTours}>
-                <DeleteOutlineOutlined sx={cardStyles.deleteIcon} />
+                <DeleteOutlineOutlined
+                  sx={cardStyles.deleteIcon}
+                  onClick={() => handleDelete?.()}
+                />
                 <BaseButton
                   sx={cardStyles.toursButton}
                   onClick={() => navigate("/destination-details")}
