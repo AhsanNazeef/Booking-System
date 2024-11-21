@@ -8,7 +8,10 @@ export const scheduleCardStyles = {
     backgroundColor: "white",
     overflow: "visible",
     position: "relative",
-    padding: "32px",
+    padding: {
+      xs: "20px",
+      md: "32px",
+    },
   },
   contentOneContainer: {
     display: "flex",
@@ -17,32 +20,51 @@ export const scheduleCardStyles = {
   },
   weatherIcon: {
     color: "rgba(117, 119, 139, 1)",
-    fontSize: "35px",
+    fontSize: {
+      xs: "24px",
+      md: "32px",
+      lg: "35px",
+    },
     stroke: "#ffffff",
     strokeWidth: "1px",
   },
   innerFlex: {
     display: "flex",
     flexDirection: "row",
-    gap: "15px",
+    gap: {
+      xs: "10px",
+      md: "15px",
+    },
     alignItems: "center",
   },
   textPrimary: {
     fontFamily: "Poppins",
     fontStyle: "normal",
     fontWeight: 500,
-    fontSize: "24px",
+    fontSize: {
+      xs: "16px",
+      md: "20px",
+      lg: "24px",
+    },
     color: "#202445",
   },
   textSecondary: {
     fontFamily: "Poppins",
     fontStyle: "normal",
     fontWeight: 500,
-    fontSize: "16px",
+    fontSize: {
+      xs: "13px",
+      sm: "12px",
+      md: "14px",
+      lg: "16px",
+    },
     color: "#404040",
   },
   dotIcon: {
-    fontSize: "7px",
+    fontSize: {
+      xs: "5px",
+      md: "7px",
+    },
     color: "#000",
   },
 };

@@ -1,9 +1,7 @@
 import { Box, Typography } from "@mui/material";
 import { homeStyles } from "./styles";
 import BaseLink from "../../components/BaseLink";
-import ImageOne from "../../assets/Images/ImgOne.png";
-import ImageTwo from "../../assets/Images/ImgTwo.png";
-import ImageThree from "../../assets/Images/ImgThree.png";
+import HomeImageGrid from "../../components/HomeImageGrid";
 
 const Home = () => {
   return (
@@ -28,19 +26,7 @@ const Home = () => {
           Explore Now
         </BaseLink>
       </Box>
-      <Box sx={homeStyles.imageWrapper}>
-        <Box sx={homeStyles.gridContainer}>
-          <Box sx={{ ...homeStyles.gridItem, ...homeStyles.spanTwoRows }}>
-            <img src={ImageOne} alt="" />
-          </Box>
-          <Box sx={homeStyles.gridItem}>
-            <img src={ImageTwo} alt="" />
-          </Box>
-          <Box sx={homeStyles.gridItem}>
-            <img src={ImageThree} alt="" />
-          </Box>
-        </Box>
-      </Box>
+      <HomeImageGrid />
     </Box>
   );
 };

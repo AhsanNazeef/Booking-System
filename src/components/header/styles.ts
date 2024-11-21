@@ -53,7 +53,6 @@ export const headerStyles = {
     },
     ".MuiCollapse-root &": {
       textAlign: "center",
-      width: "100%",
       padding: "8px 0",
     },
   },

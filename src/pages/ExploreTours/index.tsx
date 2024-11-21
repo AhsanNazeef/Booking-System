@@ -6,15 +6,17 @@ import PopularSearch from "../../components/PopularSearch";
 
 const ExploreTours = () => {
   return (
-    <Box>
+    <>
       <Box sx={exploreToursStyles.coverImage}>
         <img src={CoverImage} alt="tour" />
       </Box>
       <Box sx={exploreToursStyles.container}>
-        <SearchBar />
-        <PopularSearch />
+        <Box sx={exploreToursStyles.content}>
+          <SearchBar />
+          <PopularSearch />
+        </Box>
       </Box>
-    </Box>
+    </>
   );
 };
 

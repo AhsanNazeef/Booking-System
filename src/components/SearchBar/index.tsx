@@ -10,16 +10,21 @@ import {
   OutlinedInput,
   Select,
   SelectChangeEvent,
+  useMediaQuery,
+  useTheme,
 } from "@mui/material";
 import { Box, Button, Typography } from "@mui/material";
 import { searchBarStyles } from "./styles";
 import { DateRangePicker } from "rsuite";
 import { useState } from "react";
+import { format } from "rsuite/esm/internals/utils/date";
 
 const { beforeToday } = DateRangePicker;
 
 const SearchBar = () => {
   const [priceRange, setPriceRange] = useState("");
+  const theme = useTheme();
+  const isSmallScreen = useMediaQuery(theme.breakpoints.down("md"));
 
   const handleChange = (event: SelectChangeEvent) => {
     setPriceRange(event.target.value as string);
@@ -47,6 +52,7 @@ const SearchBar = () => {
               appearance="subtle"
               placeholder="Choose Here"
               size="lg"
+              showOneCalendar={isSmallScreen}
               shouldDisableDate={beforeToday()}
               character=" - "
               format="dd MMM"

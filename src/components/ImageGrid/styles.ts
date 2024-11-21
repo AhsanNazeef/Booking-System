@@ -1,8 +1,15 @@
 export const imageGridStyles = {
   gridWrapper: {
     display: "grid",
-    gridTemplateColumns: "repeat(4, 1fr)",
-    gap: "24px",
+    gridTemplateColumns: {
+      xs: "repeat(2, 1fr)",
+      sm: "repeat(4, 1fr)",
+    },
+    gap: {
+      xs: "8px",
+      sm: "16px",
+      md: "24px",
+    },
   },
   gridItem: {
     height: "100%",
