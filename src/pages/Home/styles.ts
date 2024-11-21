@@ -1,5 +1,4 @@
 import mainBg from "../../assets/Images/mainBg.png";
-import lineBelow from "/public/lineBelow.svg";
 
 export const homeStyles = {
   container: {
