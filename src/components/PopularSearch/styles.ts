@@ -6,10 +6,17 @@ export const popularSearchStyles = {
     flexDirection: "column",
     alignItems: "center",
     gap: "20px",
+    marginBottom: {
+      xs: "40px",
+      lg: 0,
+    },
   },
   heading: {
     fontFamily: "Poppins",
-    fontSize: "24px",
+    fontSize: {
+      xs: "20px",
+      lg: "24px",
+    },
     fontStyle: "normal",
     fontWeight: 600,
     color: "#202445",
@@ -17,9 +24,11 @@ export const popularSearchStyles = {
   citiesContainer: {
     display: "flex",
     flexWrap: "wrap",
-    gap: "32px",
+    gap: {
+      xs: "18px",
+      lg: "32px",
+    },
     justifyContent: "center",
-    maxWidth: 1050,
   },
   citiesWrapper: {
     padding: "10px",
@@ -32,7 +41,10 @@ export const popularSearchStyles = {
   citiesText: {
     fontFamily: "Poppins, Helvetica",
     fontWeight: 400,
-    fontSize: "20px",
+    fontSize: {
+      xs: "16px",
+      lg: "20px",
+    },
     color: "#787c9a",
     "&:hover": {
       color: "#f16b51",

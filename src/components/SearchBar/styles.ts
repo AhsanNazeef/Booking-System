@@ -1,8 +1,17 @@
 export const searchBarStyles = {
   container: {
-    width: 979,
-    height: 130,
-    marginTop: -8,
+    width: {
+      xs: "fit-content",
+      lg: "100%",
+    },
+    height: {
+      xs: "fit-content",
+      lg: "130px",
+    },
+    marginTop: {
+      xs: -18,
+      lg: -8,
+    },
     marginLeft: "auto",
     marginRight: "auto",
     backgroundColor: "white",
@@ -10,7 +19,18 @@ export const searchBarStyles = {
     boxShadow: "0px 0px 12px rgba(159, 164, 189, 0.3)",
     padding: 3,
     display: "flex",
-    alignItems: "center",
+    alignItems: {
+      xs: "flex-start",
+      lg: "center",
+    },
+    gap: {
+      xs: 1,
+      lg: 0,
+    },
+    flexDirection: {
+      xs: "column",
+      lg: "row",
+    },
     justifyContent: "space-between",
   },
   contentWrapper: {
@@ -28,7 +48,10 @@ export const searchBarStyles = {
   heading: {
     color: "#202445",
     fontFamily: "Poppins",
-    fontSize: "20px",
+    fontSize: {
+      xs: "16px",
+      lg: "20px",
+    },
     fontStyle: "normal",
     fontWeight: 600,
     lineHeight: "normal",
@@ -85,8 +108,18 @@ export const searchBarStyles = {
     alignItems: "center",
     justifyContent: "center",
     borderRadius: 2,
-    width: 54,
-    height: 87,
+    width: {
+      xs: "100%",
+      lg: 54,
+    },
+    height: {
+      xs: 45,
+      lg: 87,
+    },
+    marginTop: {
+      xs: 2,
+      lg: 0,
+    },
     cursor: "pointer",
     "&:hover": {
       backgroundColor: "#e55a3c",
@@ -169,13 +202,12 @@ export const searchBarStyles = {
       backgroundColor: "rgba(241, 107, 81, 0.20)",
       color: "#505050",
     },
-    "& .MuiMenuItem-root:selected": {
+    "& .MuiMenuItem-root.Mui-selected": {
       backgroundColor: "rgba(241, 107, 81, 0.20)",
       color: "#505050",
-    },
-    "& .Mui-selected": {
-      backgroundColor: "rgba(241, 107, 81, 0.20)",
-      color: "#505050",
+      "&:hover": {
+        backgroundColor: "rgba(241, 107, 81, 0.30)",
+      },
     },
   },
 };

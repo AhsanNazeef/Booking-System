@@ -1,5 +1,6 @@
 export const exploreToursStyles = {
   coverImage: {
+    zIndex: -1,
     width: "100%",
     height: "55vh",
     position: "relative",
@@ -23,6 +24,19 @@ export const exploreToursStyles = {
     position: "relative",
     display: "flex",
     flexDirection: "column",
+    gap: "48px",
+    width: "100%",
+    alignItems: "center",
+    justifyContent: "center",
+    paddingX: {
+      xs: "16px",
+      md: "64px",
+    },
+  },
+  content: {
+    display: "flex",
+    flexDirection: "column",
+    maxWidth: 1050,
     gap: "48px",
   },
 };
