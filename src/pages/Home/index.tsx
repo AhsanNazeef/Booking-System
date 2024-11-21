@@ -2,6 +2,7 @@ import { Box, Typography } from "@mui/material";
 import { homeStyles } from "./styles";
 import BaseLink from "../../components/BaseLink";
 import HomeImageGrid from "../../components/HomeImageGrid";
+import lineBelow from "../../assets/Images/line-below.svg";
 
 const Home = () => {
   return (
