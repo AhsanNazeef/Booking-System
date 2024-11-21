@@ -16,6 +16,7 @@ const Home = () => {
             >
               Explore
             </Typography>
+            <img src={lineBelow} alt="line below" />
             The New World With Tourbay
           </Typography>
           <Typography sx={homeStyles.secondaryText}>
