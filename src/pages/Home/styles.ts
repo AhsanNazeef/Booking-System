@@ -1,7 +1,10 @@
+import mainBg from "../../assets/Images/mainBg.png";
+import lineBelow from "../../assets/Images/lineBelow.svg";
+
 export const homeStyles = {
   container: {
     position: "relative",
-    backgroundImage: 'url("../../src/assets/Images/mainBg.png")',
+    backgroundImage: `url(${mainBg})`,
     backgroundPosition: "right",
     backgroundRepeat: "no-repeat",
     height: {
@@ -74,7 +77,7 @@ export const homeStyles = {
       left: 0,
       width: "100%",
       height: "40px",
-      backgroundImage: 'url("../../src/assets/Images/lineBelow.svg")',
+      backgroundImage: `url(${lineBelow})`,
       backgroundRepeat: "no-repeat",
       backgroundSize: "contain",
       zIndex: -1,
