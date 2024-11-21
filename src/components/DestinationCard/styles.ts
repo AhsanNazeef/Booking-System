@@ -11,7 +11,10 @@ export const cardStyles = {
   },
   imageWrapper: {
     width: "100%",
-    height: "225px",
+    height: {
+      xs: "300px",
+      md: "225px",
+    },
     borderRadius: "10px 10px 0 0",
     overflow: "hidden",
     "& img": {
@@ -35,7 +38,10 @@ export const cardStyles = {
   title: {
     color: "#000000",
     fontFamily: "Poppins",
-    fontSize: "20px",
+    fontSize: {
+      xs: "16px",
+      lg: "20px",
+    },
     fontWeight: 600,
     overflow: "hidden",
     textOverflow: "ellipsis",
@@ -46,7 +52,10 @@ export const cardStyles = {
   description: {
     color: "#999999",
     fontFamily: "Poppins",
-    fontSize: "16px",
+    fontSize: {
+      xs: "14px",
+      lg: "16px",
+    },
     overflow: "hidden",
     textOverflow: "ellipsis",
     display: "-webkit-box",
@@ -57,7 +66,14 @@ export const cardStyles = {
     display: "flex",
     flexDirection: "row",
     alignItems: "center",
-    gap: "54px",
+    gap: {
+      xs: "0px",
+      lg: "54px",
+    },
+    justifyContent: {
+      xs: "space-between",
+      lg: "flex-start",
+    },
   },
   detailRow: {
     display: "flex",
@@ -68,7 +84,10 @@ export const cardStyles = {
   text: {
     color: "#797C9A",
     fontFamily: "Poppins",
-    fontSize: "16px",
+    fontSize: {
+      xs: "14px",
+      lg: "16px",
+    },
     fontWeight: 400,
   },
   icon: {
@@ -79,31 +98,73 @@ export const cardStyles = {
   },
   myTours: {
     display: "flex",
-    flexDirection: "row",
-    justifyContent: "space-between",
+    flexDirection: {
+      xs: "column",
+      md: "row",
+    },
     alignItems: "center",
+    width: "100%",
+    gap: {
+      xs: "16px",
+      md: "10px",
+      lg: "20px",
+    },
   },
   deleteIcon: {
     color: "#FF5C5C",
     cursor: "pointer",
-    fontSize: "35px",
+    fontSize: {
+      xs: "30px",
+      md: "25px",
+      lg: "35px",
+    },
   },
   toursButton: {
     paddingX: "28px",
+    width: "100%",
+  },
+  buttonWrapper: {
+    display: "flex",
+    flexDirection: {
+      xs: "column",
+      md: "row",
+    },
+    justifyContent: "space-between",
+    width: "90%",
+    gap: {
+      xs: "16px",
+      md: "10px",
+      lg: "20px",
+    },
   },
   textContentWrapper: {
-    position: "absolute",
+    position: {
+      xs: "relative",
+      md: "absolute",
+    },
     left: 0,
     right: 0,
     bottom: 0,
-    padding: "18px",
+    padding: {
+      xs: 0,
+      md: "16px",
+    },
     width: "100%",
     paddingTop: 0,
     backgroundColor: "white",
     borderRadius: "0 0 10px 10px",
-    boxShadow:
-      "4px 4px 4px -4px rgba(159,164,189,0.3), -4px 4px 4px -4px rgba(159,164,189,0.3)",
-    transform: "translateY(30%)",
-    zIndex: -1,
+    boxShadow: {
+      xs: "none",
+      md: "4px 4px 4px -4px rgba(159,164,189,0.3), -4px 4px 4px -4px rgba(159,164,189,0.3)",
+    },
+
+    transform: {
+      xs: "translateY(0)",
+      md: "translateY(30%)",
+    },
+    zIndex: {
+      xs: 1,
+      md: -1,
+    },
   },
 };

@@ -2,36 +2,58 @@ export const myToursStyles = {
   container: {
     display: "flex",
     flexDirection: "column",
-    marginX: "64px",
-    marginTop: "126px",
-    marginBottom: "64px",
+    margin: {
+      xs: "126px 16px 16px 16px",
+      md: "126px 64px 64px  64px",
+    },
     gap: "32px",
   },
   headingWrapper: {
     display: "flex",
-    flexDirection: "row",
     justifyContent: "space-between",
   },
   heading: {
     fontFamily: "Poppins",
     fontStyle: "normal",
     fontWeight: 600,
-    fontSize: "40px",
+    fontSize: {
+      xs: "24px",
+      md: "32px",
+      lg: "40px",
+    },
     color: "#202445",
   },
   cardsWrapper: {
     display: "grid",
-    gridTemplateColumns: "1fr 1fr 1fr",
-    gap: "54px",
+    gridTemplateColumns: {
+      xs: "1fr",
+      sm: "1fr 1fr",
+      md: "1fr 1fr 1fr",
+      xl: "1fr 1fr 1fr 1fr",
+    },
+    gap: {
+      xs: "24px",
+      sm: "24px",
+      md: "32px",
+      xl: "54px",
+    },
   },
   modal: {
     position: "absolute",
     top: "50%",
     left: "50%",
     transform: "translate(-50%, -50%)",
+    width: {
+      xs: "calc(100% - 32px)",
+      sm: "calc(100% - 64px)",
+      md: "unset",
+    },
     backgroundColor: "#fff",
     borderRadius: "12px",
-    padding: "24px 32px",
+    padding: {
+      xs: "20px 20px",
+      sm: "24px 32px",
+    },
     gap: "32px",
     display: "flex",
     flexDirection: "column",
@@ -57,7 +79,11 @@ export const myToursStyles = {
   },
   buttomsWrapper: {
     display: "flex",
-    flexDirection: "row",
+    flexDirection: {
+      xs: "column-reverse",
+      sm: "row",
+    },
+
     gap: "10px",
     justifyContent: "flex-end",
   },

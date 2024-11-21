@@ -1,4 +1,4 @@
-import { Box, Typography } from "@mui/material";
+import { Box, Typography, useMediaQuery, useTheme } from "@mui/material";
 import { cardStyles } from "./styles";
 import BaseButton from "../BaseButton";
 import { useState } from "react";
@@ -29,6 +29,8 @@ const DestinationCard = ({
   handleDelete,
 }: DestinationCardProps) => {
   const [isHovered, setIsHovered] = useState(false);
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down("md"));
   const navigate = useNavigate();
 
   return (
@@ -50,7 +52,7 @@ const DestinationCard = ({
           <Typography sx={cardStyles.description}>{description}</Typography>
         </Box>
 
-        {!isHovered ? (
+        {!isHovered || isMobile ? (
           <Box sx={cardStyles.destinationDetails}>
             <Box sx={cardStyles.detailRow}>
               <AttachMoneyRounded sx={cardStyles.icon} />
@@ -61,7 +63,9 @@ const DestinationCard = ({
               <Typography sx={cardStyles.text}>{duration}</Typography>
             </Box>
           </Box>
-        ) : (
+        ) : null}
+
+        {(isHovered || isMobile) && (
           <Box sx={cardStyles.textContentWrapper}>
             {type === "allTours" ? (
               <BaseButton
@@ -76,18 +80,20 @@ const DestinationCard = ({
                   sx={cardStyles.deleteIcon}
                   onClick={() => handleDelete?.()}
                 />
-                <BaseButton
-                  sx={cardStyles.toursButton}
-                  onClick={() => navigate("/destination-details")}
-                >
-                  Details
-                </BaseButton>
-                <BaseButton
-                  sx={cardStyles.toursButton}
-                  onClick={() => navigate("/update-booking")}
-                >
-                  Update
-                </BaseButton>
+                <Box sx={cardStyles.buttonWrapper}>
+                  <BaseButton
+                    sx={cardStyles.toursButton}
+                    onClick={() => navigate("/destination-details")}
+                  >
+                    Details
+                  </BaseButton>
+                  <BaseButton
+                    sx={cardStyles.toursButton}
+                    onClick={() => navigate("/update-booking")}
+                  >
+                    Update
+                  </BaseButton>
+                </Box>
               </Box>
             )}
           </Box>
