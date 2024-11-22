@@ -63,26 +63,26 @@ npm run lint
 
 ### Pages
 
-- **Add Tour**: The booking confirmation page.
-- ![image](https://github.com/user-attachments/assets/3981d7de-3ca6-45a1-a700-4dfb9f8ac8f9)
-
-- **BookTour**: The page to book a tour.
-- ![image](https://github.com/user-attachments/assets/26874732-90a2-4c43-9c61-48b290d37d4b)
-
-- **DestinationDetails**: The page to display destination details.
-- ![image](https://github.com/user-attachments/assets/9660ba9b-f69e-4bc0-baad-51024543215e)
+- **Home**: The home page.
+ ![image](https://github.com/user-attachments/assets/5028516f-b1ed-43cf-9957-fb2493ee4873)
 
 - **ExploreTours**: The page to explore tours.
-- ![image](https://github.com/user-attachments/assets/dac9ad64-2c99-47d9-ac85-e7d51de6697f)
+ ![image](https://github.com/user-attachments/assets/dac9ad64-2c99-47d9-ac85-e7d51de6697f)
 
-- **Home**: The home page.
-- ![image](https://github.com/user-attachments/assets/5028516f-b1ed-43cf-9957-fb2493ee4873)
+- **BookTour**: The page to book a tour.
+ ![image](https://github.com/user-attachments/assets/26874732-90a2-4c43-9c61-48b290d37d4b)
+
+- **DestinationDetails**: The page to display destination details.
+ ![image](https://github.com/user-attachments/assets/9660ba9b-f69e-4bc0-baad-51024543215e)
 
 - **MyTours**: The page to display user's tours.
-- ![image](https://github.com/user-attachments/assets/6b816a92-6dc2-4ca6-aab1-e9d68f0829ad)
+ ![image](https://github.com/user-attachments/assets/6b816a92-6dc2-4ca6-aab1-e9d68f0829ad)
+
+- **Add Tour**: The booking confirmation page.
+ ![image](https://github.com/user-attachments/assets/3981d7de-3ca6-45a1-a700-4dfb9f8ac8f9)
 
 - **NotFound**: The 404 not found page.
-- ![image](https://github.com/user-attachments/assets/adebb68f-bb86-4229-9718-164f3aa87654)
+ ![image](https://github.com/user-attachments/assets/adebb68f-bb86-4229-9718-164f3aa87654)
 
 
 ### Constants
