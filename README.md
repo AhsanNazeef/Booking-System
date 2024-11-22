@@ -2,54 +2,6 @@
 
 This project is a React application built with TypeScript and Vite. It includes various components and pages to create a comprehensive web application.
 
-## Project Structure
-
-```
-
-.gitignore
-eslint.config.js
-index.html
-package.json
-public/
-README.md
-src/
-App.tsx
-assets/
-Images/
-components/
-BaseButton/
-BaseLink/
-BookingForm/
-DestinationCard/
-Header/
-HomeImageGrid/
-ImageGrid/
-IncludedList/
-Layout/
-PopularSearch/
-ScheduleCard/
-SearchBar/
-constants.ts
-index.css
-main.tsx
-pages/
-BookingConfirmation/
-BookTour/
-DestinationDetails/
-ExploreTours/
-Home/
-MyTours/
-NotFound/
-router.tsx
-utils/
-vite-env.d.ts
-tsconfig.app.json
-tsconfig.json
-tsconfig.node.json
-vite.config.ts
-
-```
-
 ## Getting Started
 
 ### Navigate to the project directory:
@@ -111,13 +63,27 @@ npm run lint
 
 ### Pages
 
-- **BookingConfirmation**: The booking confirmation page.
+- **Add Tour**: The booking confirmation page.
+- ![image](https://github.com/user-attachments/assets/3981d7de-3ca6-45a1-a700-4dfb9f8ac8f9)
+
 - **BookTour**: The page to book a tour.
+- ![image](https://github.com/user-attachments/assets/26874732-90a2-4c43-9c61-48b290d37d4b)
+
 - **DestinationDetails**: The page to display destination details.
+- ![image](https://github.com/user-attachments/assets/9660ba9b-f69e-4bc0-baad-51024543215e)
+
 - **ExploreTours**: The page to explore tours.
+- ![image](https://github.com/user-attachments/assets/dac9ad64-2c99-47d9-ac85-e7d51de6697f)
+
 - **Home**: The home page.
+- ![image](https://github.com/user-attachments/assets/5028516f-b1ed-43cf-9957-fb2493ee4873)
+
 - **MyTours**: The page to display user's tours.
+- ![image](https://github.com/user-attachments/assets/6b816a92-6dc2-4ca6-aab1-e9d68f0829ad)
+
 - **NotFound**: The 404 not found page.
+- ![image](https://github.com/user-attachments/assets/adebb68f-bb86-4229-9718-164f3aa87654)
+
 
 ### Constants
 
