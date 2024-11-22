@@ -1,4 +1,4 @@
-export const bookingConfirmationStyles = {
+export const addTourStyles = {
   container: {
     display: "flex",
     flexDirection: {

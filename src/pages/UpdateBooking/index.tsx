@@ -1,16 +1,14 @@
 import { Box, Typography } from "@mui/material";
-import { bookingConfirmationStyles } from "../BookingConfirmation/styles";
+import { addTourStyles } from "../AddTour/styles";
 import coverPicture from "../../assets/Images/cover2.png";
 import BookingForm from "../../components/BookingForm";
 
 const UpdateBooking = () => {
   return (
-    <Box sx={bookingConfirmationStyles.container}>
-      <Box sx={bookingConfirmationStyles.sectionOne}>
-        <Typography sx={bookingConfirmationStyles.title}>
-          Update Your Booking
-        </Typography>
-        <Box sx={bookingConfirmationStyles.formWrapper}>
+    <Box sx={addTourStyles.container}>
+      <Box sx={addTourStyles.sectionOne}>
+        <Typography sx={addTourStyles.title}>Update Your Booking</Typography>
+        <Box sx={addTourStyles.formWrapper}>
           <BookingForm
             defaultValues={{
               name: "John Doe",
@@ -24,7 +22,7 @@ const UpdateBooking = () => {
           />
         </Box>
       </Box>
-      <Box sx={bookingConfirmationStyles.sectionTwo}>
+      <Box sx={addTourStyles.sectionTwo}>
         <img loading="lazy" src={coverPicture} alt="cover-photo" />
       </Box>
     </Box>
