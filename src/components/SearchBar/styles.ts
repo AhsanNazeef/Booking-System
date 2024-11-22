@@ -1,7 +1,9 @@
 export const searchBarStyles = {
   container: {
     width: {
-      xs: "fit-content",
+      xs: "100%",
+      sm: "90%",
+      md: "70%",
       lg: "100%",
     },
     height: {

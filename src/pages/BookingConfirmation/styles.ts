@@ -10,7 +10,7 @@ export const bookingConfirmationStyles = {
       lg: 0,
     },
     margin: {
-      xs: "126px 16px 0 16px",
+      xs: "126px 16px 16px 16px",
       md: "126px 0 0 64px",
     },
   },
