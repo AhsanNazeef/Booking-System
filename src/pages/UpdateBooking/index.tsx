@@ -25,7 +25,7 @@ const UpdateBooking = () => {
         </Box>
       </Box>
       <Box sx={bookingConfirmationStyles.sectionTwo}>
-        <img src={coverPicture} alt="cover-photo" />
+        <img loading="lazy" src={coverPicture} alt="cover-photo" />
       </Box>
     </Box>
   );

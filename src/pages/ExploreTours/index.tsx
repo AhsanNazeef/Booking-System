@@ -8,7 +8,7 @@ const ExploreTours = () => {
   return (
     <>
       <Box sx={exploreToursStyles.coverImage}>
-        <img src={CoverImage} alt="tour" />
+        <img loading="lazy" src={CoverImage} alt="tour" />
       </Box>
       <Box sx={exploreToursStyles.container}>
         <Box sx={exploreToursStyles.content}>

@@ -15,7 +15,7 @@ const Home = () => {
               component="span"
             >
               Explore
-              <img src={lineBelow} alt="line below" />
+              <img loading="lazy" src={lineBelow} alt="line below" />
             </Typography>
             The New World With Tourbay
           </Typography>

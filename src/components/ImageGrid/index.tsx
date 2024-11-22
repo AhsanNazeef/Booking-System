@@ -16,7 +16,7 @@ const ImageGrid = ({ images }: ImageGridProps) => {
             ...(index === 0 ? imageGridStyles.spanTwo : {}),
           }}
         >
-          <img src={image} alt={`grid-item-${index}`} />
+          <img loading="lazy" src={image} alt={`grid-item-${index}`} />
         </Box>
       ))}
     </Box>

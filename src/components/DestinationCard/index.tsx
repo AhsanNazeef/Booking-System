@@ -43,7 +43,7 @@ const DestinationCard = ({
       onMouseLeave={() => setIsHovered(false)}
     >
       <Box sx={cardStyles.imageWrapper}>
-        <img src={img} alt="destination" />
+        <img loading="lazy" src={img} alt="destination" />
       </Box>
 
       <Box sx={cardStyles.cardContent}>

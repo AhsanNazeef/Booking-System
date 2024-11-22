@@ -61,7 +61,7 @@ const Header = () => {
       <Box sx={headerStyles.fixedContainer}>
         <Box sx={headerStyles.container}>
           <Link to="/" component={RouterLink} sx={headerStyles.navlinks}>
-            <img src={Logo} alt="logo" />
+            <img src={Logo} loading="lazy" alt="logo" />
           </Link>
           <Box sx={headerStyles.navlinksWrapper}>{renderNavigationLinks()}</Box>
           {renderExploreMore()}
