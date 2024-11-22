@@ -88,7 +88,7 @@ const SearchBar = () => {
         </Box>
       </Box>
       <Button sx={searchBarStyles.buttonTwo}>
-        <SearchOutlined sx={{ fontSize: 40 }} />
+        <SearchOutlined sx={searchBarStyles.searchIcon} />
       </Button>
     </Box>
   );

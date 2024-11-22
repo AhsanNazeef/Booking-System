@@ -49,7 +49,9 @@ export const searchBarStyles = {
     color: "#202445",
     fontFamily: "Poppins",
     fontSize: {
-      xs: "16px",
+      xs: "14px",
+      sm: "16px",
+      md: "18px",
       lg: "20px",
     },
     fontStyle: "normal",
@@ -66,7 +68,11 @@ export const searchBarStyles = {
       padding: 0,
       border: `none`,
       fontWeight: 500,
-      fontSize: "16px",
+      fontSize: {
+        xs: "12px",
+        sm: "14px",
+        lg: "16px",
+      },
       fontFamily: "Poppins",
       lineHeight: "normal",
       fontStyle: "normal",
@@ -92,7 +98,11 @@ export const searchBarStyles = {
   buttonOne: {
     color: "#999",
     fontFamily: "Poppins",
-    fontSize: "16px",
+    fontSize: {
+      xs: "12px",
+      sm: "14px",
+      lg: "16px",
+    },
     fontStyle: "normal",
     fontWeight: 400,
     lineHeight: "normal",
@@ -134,7 +144,11 @@ export const searchBarStyles = {
       "& .rs-input": {
         color: "#202445",
         fontFamily: "Poppins",
-        fontSize: "16px",
+        fontSize: {
+          xs: "12px",
+          sm: "14px",
+          lg: "16px",
+        },
         fontStyle: "normal",
         fontWeight: 500,
         lineHeight: "normal",
@@ -158,13 +172,21 @@ export const searchBarStyles = {
     },
   },
   selectDropdown: {
-    width: "160px",
+    width: {
+      xs: "110px",
+      sm: "130px",
+      lg: "160px",
+    },
     color: "#fff",
     "& .MuiInputBase-input": {
       padding: 0,
       border: `none`,
       fontWeight: 500,
-      fontSize: "16px",
+      fontSize: {
+        xs: "12px",
+        sm: "14px",
+        lg: "16px",
+      },
       fontFamily: "Poppins",
       lineHeight: "normal",
       fontStyle: "normal",
@@ -184,7 +206,11 @@ export const searchBarStyles = {
     },
     "& .MuiSelect-icon": {
       color: "#202445",
-      fontSize: "35px",
+      fontSize: {
+        xs: "20px",
+        sm: "24px",
+        lg: "35px",
+      },
     },
     "&:hover": {
       ":before": {
@@ -208,6 +234,13 @@ export const searchBarStyles = {
       "&:hover": {
         backgroundColor: "rgba(241, 107, 81, 0.30)",
       },
+    },
+  },
+  searchIcon: {
+    fontSize: {
+      xs: "30px",
+      sm: "35px",
+      lg: "40px",
     },
   },
 };

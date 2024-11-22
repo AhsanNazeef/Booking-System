@@ -14,7 +14,8 @@ export const popularSearchStyles = {
   heading: {
     fontFamily: "Poppins",
     fontSize: {
-      xs: "20px",
+      xs: "18px",
+      sm: "20px",
       lg: "24px",
     },
     fontStyle: "normal",
@@ -42,7 +43,9 @@ export const popularSearchStyles = {
     fontFamily: "Poppins, Helvetica",
     fontWeight: 400,
     fontSize: {
-      xs: "16px",
+      xs: "14px",
+      sm: "16px",
+      md: "18px",
       lg: "20px",
     },
     color: "#787c9a",
